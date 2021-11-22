@@ -4,7 +4,7 @@ Hi! Welcome to our github repository. If you haven't check it out yet, we highly
 
 ## Overview 
 
-![Analysis Diagram]()
+![Architexture Diagram](Architecture Design Diagram.jpg)
 
 ## AWS Translate Workflow
 

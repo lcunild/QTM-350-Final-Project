@@ -4,7 +4,7 @@ Hi! Welcome to our github repository. If you haven't check it out yet, we highly
 
 ## Overview 
 
-![alt text](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Architecture%20Design%20Diagram.drawio.pdf)
+https://github.com/lcunild/QTM-350-Final-Project/blob/main/Architecture%20Design%20Diagram.drawio.pdf
 
 ## AWS Translate Workflow
 

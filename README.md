@@ -1,21 +1,26 @@
 # Using AWS ML Translate to Translate Slang and Non-Traditional Language
 
-Hi! Welcome to our github repository. If you haven't check it out yet, we highly recommend looking at our [blog]() first. It is a more wholistic and less technical summary of what our project was about and showcases our results. This read me file contatins all the information you need in order to duplicate our project, or take aspects of it and do you own thing with it. We tried our best to explain how the python notebooks and the aws services work together so you should not need any experience with either in order to navigate and use this github, but some expereince definelty doesn't hurt. 
+Hi! Welcome to our Github repository. If you haven't check it out yet, we highly recommend looking at our [blog]() first. It is a more holistic and less technical summary of what our project was about and showcases our results. This read me file contains all the information you need in order to duplicate our project, or take aspects of it and do you own thing with it. We tried our best to explain how the Python notebooks and the AWS services work together so you should not need any experience with either in order to navigate and use this repo, but some experience definitely doesn't hurt. 
 
 ## Overview 
 
 ![Architexture Diagram](https://github.com/lcunild/QTM-350-Final-Project/blob/d158cc946c03de1de535a30bb2c1bbb3a0eb7919/Architecture%20Design%20Diagram.jpg)
 
+## Pulling Data from the Twitter API. 
+
+To retrieve our Twitter data, we used the [following code](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb), available in our repo. 
+
+We used [this](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/TwitterData.txt) .txt file (available in our repo) that we pulled from the API in our translation below. 
+
 ## AWS Translate Workflow
 
+[Here is a link to our AWS Translate Workflow.](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html)
 
 ## Jupyter Analysis Workflow
 
+[Here is a link to our Jupyter Analysis Workflow.](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb)
 
 ## Proposal
-
-
-
 
 We want to use the [Amazon Translate](http://qtm350projectproposal.s3-website-us-east-1.amazonaws.com) service and the Twitter API to pull tweets in various languages including English. After that, we want to use the Translate service to translate the tweets into English (or from English into another language, then back to English) to determine how well the service handles slang and non-traditional language.
 

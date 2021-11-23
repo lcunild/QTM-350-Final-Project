@@ -68,18 +68,26 @@ Once you have successfully cloned our repository you are ready to begin!
 Note: if you have not used any of the packages in the Python notebooks before, you will need to run them in a new cell before you can continue with the code. To do this, simply run the command `!pip install packageName`, replacing packageName with the name of the package to import. For example, to install the `fuzzywuzzy` package, which we use to analyse the results in our experiment, you should run `! pip install fuzzywuzzy` before importing the packages needed to run the code in the notebook.
 
 ## Individual Experimentation
-	You should now have a good enough grasp on how our project works and that has hopefully inspired you with your own hypothesis or another idea that you want to play around on Translate with. As mentioned above, you can easily change the text for analysis by changing which twitter users’ tweets are pulled. By studying our regression.ipynb and the analysis on our blog you can get a good idea of how to analyze and interpret your results.
+
+You should now have a good enough grasp on how our project works and that has hopefully inspired you with your own hypothesis or another idea that you want to play around on Translate with. As mentioned above, you can easily change the text for analysis by changing which twitter users’ tweets are pulled. By studying our regression.ipynb and the analysis on our blog you can get a good idea of how to analyze and interpret your results.
 You can also leave twitter completely and translate your own text files hosted in an S3 bucket. That would be a fun way of testing your AWS and data science skills!
 Resources
 
 ## Aws Services
+
 The following AWS services are used:
-Amazon S3 Bucket
+
+### Amazon S3 Bucket
+
 A source bucket to store tweets and data from the Twitter Api
-Amazon Sagemaker
-Create a notebook instance for conducting analysis
-Amazon Translate
-Translates inputted text to a different language based on an imputed language code
+
+### Amazon Sagemaker
+
+Create notebook instances for conducting analysis and interacting with the S3 bucket and Twitter API
+
+### Amazon Translate
+
+Translates inputted text to a different languages and then back to english again using asynchronous batch processing
 
 
 

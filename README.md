@@ -21,7 +21,7 @@ In order to use an API for translations you have to create a dataframe for users
 
 ## S3 Workflow
 
-In order to use AWS translate it is essential to have the resulting data from API stored in an S3 Bucket as a text file. This allows you to easily call on the translator and the data from the API in a notebook instance. Here is a guide breaking down how to use S3 and create a bucket.
+In order to use AWS translate it is essential to have the resulting data from API stored in an S3 Bucket as a text file. This allows you to easily call on the translator and the data from the API in a notebook instance. [Here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) is a guide breaking down how to use S3 and create a bucket.
 
 With this bucket, we can now use AWS Translate in a notebook instance 
 

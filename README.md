@@ -5,9 +5,12 @@ This readme file contains all the information you need in order to duplicate our
 
 ## Overview 
 
+Our project has four distinct parts or workflows. Our API workflow relates to using the twitter API to collect data, and then storing that data so that it can be translated. Our AWS Translate workflow relates to actually translating your twitter data and storing it so that you can analyze it. The S3 workflow explains how we stored and accessed our data. Our analysis workflow is where we perform our data analysis and draw our conclusions. 
+
+
 ![Architexture Diagram](https://github.com/lcunild/QTM-350-Final-Project/blob/d158cc946c03de1de535a30bb2c1bbb3a0eb7919/Architecture%20Design%20Diagram.jpg)
 
-Our project has three distinct parts or workflows. Our API workflow relates to using the twitter API to collect data, and then storing that data so that it can be translated. Our AWS Translate workflow relates to actually translating your twitter data and storing it so that you can analyze it. Our analysis workflow is where we perform our data analysis and draw our conclusions.
+This architexture diagram helps visual how how different workflows interact. As you can see, data collection is the first 'real' step, but cannot be completed without having a SageMaker notebook instance to make API calls and an S3 bucket to store the files.
 
 ## Twitter API Workflow 
 To retrieve our Twitter data, we used the following code, available in our repo.

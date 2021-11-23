@@ -77,15 +77,15 @@ Resources
 
 The following AWS services are used:
 
-### Amazon S3 Bucket
+#### Amazon S3 Bucket
 
 A source bucket to store tweets and data from the Twitter Api
 
-### Amazon Sagemaker
+#### Amazon Sagemaker
 
 Create notebook instances for conducting analysis and interacting with the S3 bucket and Twitter API
 
-### Amazon Translate
+#### Amazon Translate
 
 Translates inputted text to a different languages and then back to english again using asynchronous batch processing
 

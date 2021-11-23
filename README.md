@@ -17,7 +17,7 @@ To retrieve our Twitter data, we used the following code, available in our repo.
 
 We used this .txt file (available in our repo) that we pulled from the API in our translation below.
 
-In order to use an API for translations you have to create a dataframe for users, a list of user id numbers, a list of the specific tweets that are being compiled, and a list of tweet to text files to use in Translate. All of these steps are available in the Twitter API section of our repo. This demonstration can be used for any users, not just the users that we selected. For example, Kanye West could be added as a user simply by entering his twitter information into the dataframe. This makes modification incredibly simple.
+In order to use an API for translations you have to create a dataframe for users, a list of user id numbers, a list of the specific tweets that are being compiled, and a list of tweet to text files to use in Translate. All of these steps are available in the Twitter API section of our repo. This demonstration can be used for any users, not just the users that we selected. For example, [Kanye West](https://twitter.com/kanyewest) could be added as a user simply by entering his twitter information into the dataframe. This makes modification incredibly simple.
 
 ## S3 Workflow
 

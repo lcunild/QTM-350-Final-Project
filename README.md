@@ -29,7 +29,7 @@ For this project we used AWS translate asynchronous batch processing service. Th
 
  We have a very detailed walkthrough of how to use the AWS Translate asynchronous batch processing service here. If you are relatively familiar with AWS translate, scroll down to the section labeled asynchronous bath processing. If you are new to AWS translate, you will likely find the entire walk through helpful as it demonstrates how to interact with the machine learning based translation service. 	
 
-	For example, this section demonstrates how to access the translator from within a jupyter notebook. In order to activate the AWS Translate service the boto3 package is required. This example translates 2 tweets from English to Spanish, as indicated by the Target Language Code. We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed from within a notebook rather than 
+For example, this section demonstrates how to access the translator from within a jupyter notebook. In order to activate the AWS Translate service the boto3 package is required. This example translates 2 tweets from English to Spanish, as indicated by the Target Language Code. We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed from within a notebook rather than 
 
 
 
@@ -56,12 +56,12 @@ Run a regression for each language, of match percentage on slang percentage for 
 ## Getting Started by Yourself 
 There are a few things you should do in order to be set up for success when you attempt to duplicate our work.
 You should make an S3 bucket on AWS.
-If you do not know how to do this, refer to the AWS documentation https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html
+If you do not know how to do this, refer to the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html)
 You should make a notebook instance on AWS SageMaker and open it in Jupyter lab
-If you do not know how to do this refer to the AWS documentation https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html
+If you do not know how to do this refer to the [AWS documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html)
 Navigate to your SageMaker directory within the terminal and clone this repository by using this bash command
 
-git clone https://github.com/lcunild/QTM-350-Final-Project
+	git clone https://github.com/lcunild/QTM-350-Final-Project
 
 Once you have successfully cloned our repository you are ready to begin!
 

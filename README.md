@@ -14,7 +14,9 @@ This architecture diagram helps visualize how different workflows interact. As y
 
 ## Twitter API Workflow 
 
-To retrieve our Twitter data, we had to make a developer account so we could access the Twitter API. We selected the twitter accounts we wanted, got their user IDs and retreived their most recent tweets all using the API. We then reformatted the list of tweets into a [text file](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/TwitterData.txt) so it could be translated. All of the code for these steps are available in the [Twitter API Data](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) file wihtin our repo. This code can be used for any users, not just the users that we selected. For example, [Kanye West](https://twitter.com/kanyewest) could be added as a user simply by entering his twitter handle into the for loop used to make the user list. Similar modifications to our code are just as simple simple.
+To retrieve our Twitter data, we had to make a developer account so we could access the [Twitter API](https://developer.twitter.com/en/docs/twitter-api). This application was very easy. We explained what we were going to use the API for and were approeved in minutes.
+
+We selected the twitter accounts we wanted, got their user IDs and retreived their most recent tweets all using the API. We then reformatted the list of tweets into a [text file](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/TwitterData.txt) so it could be translated. All of the code for these steps are available in the [Twitter API Data](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) file wihtin our repo. This code can be used for any users, not just the users that we selected. For example, [Kanye West](https://twitter.com/kanyewest) could be added as a user simply by entering his twitter handle into the for loop used to make the user list. Similar modifications to our code are just as simple simple.
 
 ## S3 Workflow
 
@@ -28,7 +30,7 @@ For this project we used AWS translate asynchronous batch processing service. Th
 
  We have a very detailed [walkthrough](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html) of how to use the AWS Translate asynchronous batch processing service here. If you are relatively familiar with AWS translate, scroll down to the section labeled asynchronous bath processing. If you are new to AWS translate, you will likely find the entire walk through helpful as it demonstrates how to interact with the machine learning based translation service. 	
 
-For example, this section demonstrates how to access the translator from within a jupyter notebook. In order to activate the AWS Translate service the boto3 package is required. This example translates two tweets from English to Spanish, as indicated by the Target Language Code. We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed from within a notebook.
+For example, this section demonstrates how to access the translator from within a jupyter notebook. In order to activate the AWS Translate service the boto3 package is required. This example translates two tweets from English to Spanish, as indicated by the Target Language Code. We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed from within a notebook rather than with files stored in an S3 bucket.
 
 
 

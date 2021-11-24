@@ -1,4 +1,7 @@
 # Using AWS ML Translate to Translate Slang and Non-Traditional Language
+
+![Slang](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgrammar.yourdictionary.com%2Fslang%2Fmore-american-slang.html&psig=AOvVaw1RjRVmtob_7VehSi5-sea3&ust=1637805809526000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiJzJ_0r_QCFQAAAAAdAAAAABAD)
+
 Hi! Welcome to our Github repository. If you haven't checked it out yet, we highly recommend looking at our blog first. It is a more holistic and less technical summary of what our project is about and it showcases our results and analysis. 
 
 This readme file contains all the information you need in order to duplicate our project, or take aspects of it and do your own thing with it. We tried our best to explain how the Python notebooks and the AWS services work together so you should not need any experience with either in order to navigate and use this repo, but some definitely doesn't hurt. We are going to assume that you have access to AWS services through your own AWS account.

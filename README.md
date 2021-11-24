@@ -8,7 +8,7 @@ This readme file contains all the information you need in order to duplicate our
 Our project has four distinct parts or workflows. Our API workflow relates to using the twitter API to collect data, and then storing that data so that it can be translated. Our AWS Translate workflow relates to actually translating your twitter data and storing it so that you can analyze it. The S3 workflow explains how we stored and accessed our data. Our analysis workflow is where we perform our data analysis and draw our conclusions. 
 
 
-![Architexture Diagram](https://github.com/lcunild/QTM-350-Final-Project/blob/d158cc946c03de1de535a30bb2c1bbb3a0eb7919/Architecture%20Design%20Diagram.jpg)
+![Architecture Diagram](https://github.com/lcunild/QTM-350-Final-Project/blob/d158cc946c03de1de535a30bb2c1bbb3a0eb7919/Architecture%20Design%20Diagram.jpg)
 
 This architecture diagram helps visualize how different workflows interact. As you can see, data collection is the first 'real' step, but cannot be completed without having a SageMaker notebook instance to make API calls and an S3 bucket to store the files. You will notice that this kind of interconnectivity is very characteristic of cloud computing and is a running theme of the projecet. 
 
@@ -21,6 +21,8 @@ We selected the twitter accounts we wanted, got their user IDs and retreived the
 ## S3 Workflow
 
 In order to use AWS translate it is essential to have the resulting data from API stored in an S3 Bucket as a text file. This allows you to easily call on the translator and the data from the API in a notebook instance. [Here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) is a guide breaking down how to use S3 and create a bucket.
+
+![Creating a bucket](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/Translate-job.png)
 
 With this bucket, we can now use AWS Translate in a notebook instance 
 

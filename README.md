@@ -55,7 +55,7 @@ In order to do this we must:
 
 	* The `slang()` method gets a list of words from the built-in LINUX dictionary and compares each word of each tweet to the words in the dictionary. It then 	      counts how many words in the tweet do not appear in the dictionary, and calculates the percentage of the tweet which is a slang word.
 	
-	* The `match()` method uses the `.token_set_ratio()` method from the `fuzzywuzzy` [package](https://github.com/seatgeek/fuzzywuzzy) to compare the re-  	  translated tweet to the original tweet, giving a match percentage to gauge the similarity between the two, and therefore a metric to measure the accuracy 	      of the translate service at translating the tweet. 
+	* The `match()` method uses the `.token_set_ratio()` method from the [fuzzywuzzy package](https://github.com/seatgeek/fuzzywuzzy) to compare the re-  	  translated tweet to the original tweet, giving a match percentage to gauge the similarity between the two, and therefore a metric to measure the accuracy 	      of the translate service at translating the tweet. 
 
 * Create data frames for each test language, containing the slang percentage of the original tweet and its corresponding match percentage after the translations. 
 * Plot the distribution of the match percentages for each language, as well as the slang percentages of the original tweets, using a histogram

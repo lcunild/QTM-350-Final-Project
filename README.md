@@ -2,7 +2,7 @@
 
 ![Slang](https://assets.ltkcontent.com/images/105395/Modern-American-Slang_0066f46bde.jpg)
 
-Hi! Welcome to our github repository. If you haven't checked it out yet, we highly recommend looking at our blog first. It is a more holistic depiction of what our project is about and showcases our results and analysis. 
+Hi! Welcome to our github repository. If you haven't checked it out yet, we highly recommend looking at our [blog](https://qtm350twitterproject.s3.amazonaws.com/FinalProjectBlog/FinalProjectBlog.html) first. It is a more holistic depiction of what our project is about and showcases our results and analysis. 
 
 This readme file contains all the information you need in order to navigate this github repository; whether you want to duplicate our project or take aspects of it and do your own thing with it. We tried our best to explain how the python notebooks and the AWS services work together for those with no experience with either, but some definitely doesn't hurt. We are going to assume that you have access to AWS services through your own AWS account.
 

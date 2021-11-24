@@ -69,9 +69,7 @@ There are a few things you should do in order to be set up for success when you 
 	* If you do not know how to do this, refer to the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html).
 * You should make a notebook instance on AWS SageMaker and open it in Jupyter lab
 	* If you do not know how to do this refer to the [AWS documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html).
-* Navigate to your SageMaker directory within the terminal and clone this repository by using this bash command
-
-	git clone https://github.com/lcunild/QTM-350-Final-Project
+* Open the terminal, navigate to your SageMaker directory using the bash command `cd SageMaker` and clone this repository by using this bash command `git clone https://github.com/lcunild/QTM-350-Final-Project`
 
 Once you have successfully cloned our repository you are ready to begin! Start by running the [Twitter_API_Data](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) notebook to collect the data, inputting whichever users you would like to collect data for. Then, follow the [translate walk-through](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html) to translate the tweets. Finally, run the [Regression](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) notebook to analyze your results!
 

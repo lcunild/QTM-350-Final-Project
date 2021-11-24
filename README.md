@@ -74,7 +74,7 @@ You should now have a good enough grasp on how our project works and that has ho
 You can also leave Twitter completely and translate your own text files hosted in an S3 bucket. That would be a fun way of testing your AWS and data science skills!
 Resources
 
-## Aws Services
+## AWS Services
 
 The following AWS services are used:
 

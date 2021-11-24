@@ -27,25 +27,28 @@ In order to use AWS translate it is essential to have the resulting data from AP
 
 ![Creating a bucket](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/Translate-job.png)
 
-With this bucket, we can now use AWS Translate in a notebook instance 
+With this bucket we can store our text files of tweets and use AWS Translate's asynchronous batch processing!
 
 ## Translate Workflow 
 
-For this project we used AWS translate asynchronous batch processing service. This allowed us to translate large text files and host them inside an S3 bucket which made analyzing the results much easier.
+AWS Translate's asynchronous batch processing service allows us to translate large text files that are hosted inside an S3 bucket.
 
- We have a very detailed [walkthrough](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html) of how to use the AWS Translate asynchronous batch processing service here. If you are relatively familiar with AWS translate, scroll down to the section labeled asynchronous bath processing. If you are new to AWS translate, you will likely find the entire walk through helpful as it demonstrates how to interact with the machine learning based translation service. 	
+We have a very detailed [walkthrough](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html) of how to use the AWS Translate asynchronous batch processing service here. If you are relatively familiar with AWS translate, scroll down to the section labeled asynchronous bath processing. If you are new to AWS translate, you will likely find the entire walk through helpful as it demonstrates how to interact with the machine learning based translation service. 
+
+The begininging of the walkthrough demonstrates how to access the translator from within a jupyter notebook. In the example, a section of Fyodor Dostoevsky's *The Beggar Boy at Christ’s Christmas Tree* (1876) is translated We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed using a command line interface rather than with files stored in an S3 bucket. There are other ways of using translate. If you are interested the documentation is [here](https://docs.aws.amazon.com/translate/latest/dg/how-it-works.html)
+
+This image shows what the asynchronous batch procssing interface in Translate looks like. You can see all the text files of tweets that we used in our project!
  
  ![Translate](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/Console2-screenshot.png)
 
-For example, this section demonstrates how to access the translator from within a jupyter notebook. In order to activate the AWS Translate service the boto3 package is required. This example translates two tweets from English to Spanish, as indicated by the Target Language Code. We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed from within a notebook rather than with files stored in an S3 bucket.
+
 
 
 
 ## Analysis Workflow
-In this section we will break down how to interpret and analyze the results. It is necessary that you
-import both the original tweets and re-translated tweets. To then get the tweets back into a list use the `.splitlines()` function on each txt file iterate through the new list to remove empty lines, so that each element in the list is a tweet.
+In this section we will break down how to interpret and analyze the results. It is necessary that you import both the original tweets and re-translated tweets. To then get the tweets back into a list use the `.splitlines()` function on each txt file iterate through the new list to remove empty lines, so that each element in the list is a tweet.
  
-To test whether the prevalence of slang does impact the accuracy of the translation it will require a regression of the match percentage of the re-translated and original tweet on the percentage of words which are ‘slang words’ in the original tweet. 
+To test whether the prevalence of slang impacts the accuracy of the translation we ran a regression of the match percentage of the re-translated and original tweet on the percentage of words which are ‘slang words’ in the original tweet. 
 
 In order to do this we must:
 
@@ -57,7 +60,7 @@ In order to do this we must:
 
 * Create data frames for each test language, containing the slang percentage of the original tweet and its corresponding match percentage after the translations. 
 * Plot the distribution of the match percentages for each language, as well as the slang percentages of the original tweets, using a histogram
-* Run a regression for each language, of match percentage on slang percentage for each tweet.
+* Run a regression for each language, of match percentage on slang percentage for each tweet. 
 
 
 

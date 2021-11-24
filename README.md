@@ -1,6 +1,6 @@
 # Using AWS ML Translate to Translate Slang and Non-Traditional Language
 
-![Slang](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgrammar.yourdictionary.com%2Fslang%2Fmore-american-slang.html&psig=AOvVaw1RjRVmtob_7VehSi5-sea3&ust=1637805809526000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiJzJ_0r_QCFQAAAAAdAAAAABAD)
+![Slang](https://assets.ltkcontent.com/images/105395/Modern-American-Slang_0066f46bde.jpg)
 
 Hi! Welcome to our Github repository. If you haven't checked it out yet, we highly recommend looking at our blog first. It is a more holistic and less technical summary of what our project is about and it showcases our results and analysis. 
 

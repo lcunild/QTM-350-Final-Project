@@ -64,7 +64,7 @@ Navigate to your SageMaker directory within the terminal and clone this reposito
 
 	git clone https://github.com/lcunild/QTM-350-Final-Project
 
-Once you have successfully cloned our repository you are ready to begin!
+Once you have successfully cloned our repository you are ready to begin! Start by running the [Twitter_API_Data](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) notebook to collect the data, inputting whichever users you would like to collect data for. Then, follow the [Translate]() walkthrough to translate the tweets. Finally, run the [Regression](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) notebook to analyze your results!
 
 Note: if you have not used any of the packages in the Python notebooks before, you will need to run them in a new cell before you can continue with the code. To do this, simply run the command `!pip install packageName`, replacing packageName with the name of the package to import. For example, to install the `fuzzywuzzy` package, which we use to analyse the results in our experiment, you should run `! pip install fuzzywuzzy` before importing the packages needed to run the code in the notebook.
 

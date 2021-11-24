@@ -45,14 +45,12 @@ iterate through the new list to remove empty lines, so that each element in the 
 To test whether the prevalence of slang does impact the accuracy of the translation it will require a regression of the match percentage of the re-translated and original tweet on the percentage of words which are ‘slang words’ in the original tweet. 
 
 In order to do this we must:
-create two new methods, `slang()` and `match()`. 
-`slang()` method gets a list of words from the built-in LINUX dictionary + compares each word of each tweet to the words in the dictionary
- Counts how many words in the tweet do not appear in the dictionary 
-`match()` method uses the `.token_set_ratio()` method from the `fuzzywuzzy` package to compare the re-translated tweet to the original tweet, giving a match percentage to gauge the similarity between the two. 
-Create data frames for each test language, containing the slang percentage of the original tweet and its corresponding match percentage after the translations. 
-Plot the distribution of the match percentages for each language
-Includes a histogram, as well as the slang percentages of the original tweets. 
-Run a regression for each language, of match percentage on slang percentage for each tweet.
+* create two new methods, `slang()` and `match()`. 
+	* The `slang()` method gets a list of words from the built-in LINUX dictionary and compares each word of each tweet to the words in the dictionary. It then counts how many words in the tweet do not appear in the dictionary, and calculates the percentage of the tweet which is a slang word.
+	* The `match()` method uses the `.token_set_ratio()` method from the `fuzzywuzzy` package to compare the re-translated tweet to the original tweet, giving a match percentage to gauge the similarity between the two, and therefore a metric to measure the accuracy of the Translate service at translating the tweet. 
+* Create data frames for each test language, containing the slang percentage of the original tweet and its corresponding match percentage after the translations. 
+* Plot the distribution of the match percentages for each language, as well as the slang percentages of the original tweets, using a histogram
+* Run a regression for each language, of match percentage on slang percentage for each tweet.
 
 
 

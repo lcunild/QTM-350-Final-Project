@@ -57,9 +57,9 @@ In order to do this we must:
 ## Getting Started by Yourself 
 There are a few things you should do in order to be set up for success when you attempt to duplicate our work.
 You should make an S3 bucket on AWS.
-If you do not know how to do this, refer to the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html)
+If you do not know how to do this, refer to the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html).
 You should make a notebook instance on AWS SageMaker and open it in Jupyter lab
-If you do not know how to do this refer to the [AWS documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html)
+If you do not know how to do this refer to the [AWS documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html).
 Navigate to your SageMaker directory within the terminal and clone this repository by using this bash command
 
 	git clone https://github.com/lcunild/QTM-350-Final-Project
@@ -70,8 +70,8 @@ Note: if you have not used any of the packages in the Python notebooks before, y
 
 ## Individual Experimentation
 
-You should now have a good enough grasp on how our project works and that has hopefully inspired you with your own hypothesis or another idea that you want to play around on Translate with. As mentioned above, you can easily change the text for analysis by changing which twitter users’ tweets are pulled. By studying our regression.ipynb and the analysis on our blog you can get a good idea of how to analyze and interpret your results.
-You can also leave twitter completely and translate your own text files hosted in an S3 bucket. That would be a fun way of testing your AWS and data science skills!
+You should now have a good enough grasp on how our project works and that has hopefully inspired you with your own hypothesis or another idea that you want to play around on Translate with. As mentioned above, you can easily change the text for analysis by changing which twitter users’ tweets are pulled. By studying our [regression.ipynb](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) and the analysis on our blog you can get a good idea of how to analyze and interpret your results.
+You can also leave Twitter completely and translate your own text files hosted in an S3 bucket. That would be a fun way of testing your AWS and data science skills!
 Resources
 
 ## Aws Services

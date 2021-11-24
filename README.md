@@ -25,7 +25,7 @@ We selected the Twitter accounts we wanted, got their user IDs, and retrieved th
 
 ## S3 Workflow
 
-In order to use AWS translate it is essential to have the resulting data from API stored in an S3 Bucket as a text file. This allows you to easily upload the text file in Translate and call on the translator's output files in a notebook instance. [Here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) is a guide breaking down how to use S3 and create a bucket.
+In order to use AWS translate it is essential to have the resulting data from API stored in an S3 Bucket as a text file. This allows you to easily upload the text file in translate and call on the translator's output files in a notebook instance. [Here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) is a guide breaking down how to use S3 and create a bucket.
 
 ![Creating a bucket](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/Translate-job.png)
 
@@ -33,9 +33,9 @@ With this bucket, we can store our text files of tweets and use AWS translate's 
 
 ## Translate Workflow 
 
-AWS Translate's asynchronous batch processing service allows us to translate large text files that are hosted inside an S3 bucket.
+AWS translate's asynchronous batch processing service allows us to translate large text files that are hosted inside an S3 bucket.
 
-We have a very detailed [walkthrough](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html) of how to use the AWS Translate asynchronous batch processing service here. If you are relatively familiar with AWS translate, scroll down to the section labeled asynchronous bath processing. If you are new to AWS translate, you will likely find the entire walk-through helpful as it demonstrates how to interact with the machine learning-based translation service. 
+We have a very detailed [walkthrough](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html) of how to use the AWS translate asynchronous batch processing service here. If you are relatively familiar with AWS translate, scroll down to the section labeled asynchronous bath processing. If you are new to AWS translate, you will likely find the entire walk-through helpful as it demonstrates how to interact with the machine learning-based translation service. 
 
 The beginning of the walkthrough demonstrates how to access the translator from within a Jupyter notebook. In the example, a section of Fyodor Dostoevsky's *The Beggar Boy at Christ’s Christmas Tree* (1876) is translated. We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed using a command line interface rather than with files stored in an S3 bucket. There are other ways of using translate. If you are interested the documentation is [here](https://docs.aws.amazon.com/translate/latest/dg/how-it-works.html)
 
@@ -73,13 +73,13 @@ There are a few things you should do in order to be set up for success when you 
 
 	git clone https://github.com/lcunild/QTM-350-Final-Project
 
-Once you have successfully cloned our repository you are ready to begin! Start by running the [Twitter_API_Data](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) notebook to collect the data, inputting whichever users you would like to collect data for. Then, follow the [Translate walk-through](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html) to translate the tweets. Finally, run the [Regression](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) notebook to analyze your results!
+Once you have successfully cloned our repository you are ready to begin! Start by running the [Twitter_API_Data](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) notebook to collect the data, inputting whichever users you would like to collect data for. Then, follow the [translate walk-through](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html) to translate the tweets. Finally, run the [Regression](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) notebook to analyze your results!
 
 Note: if you have not used any of the packages in the Python notebooks before, you will need to run them in a new cell before you can continue with the code. To do this, simply run the command `!pip install packageName`, replacing packageName with the name of the package to import. For example, to install the `fuzzywuzzy` package, which we use to analyze the results in our experiment, you should run `!pip install fuzzywuzzy` before importing the packages needed to run the code in the notebook.
 
 ## Individual Experimentation
 
-You should now have a good enough grasp on how our project works and that has hopefully inspired you with your own hypothesis or another idea that you want to play around on Translate with. As mentioned above, you can easily change the text for analysis by changing which Twitter users’ tweets are pulled. By studying our [regression.ipynb](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) and the analysis on our blog you can get a good idea of how to analyze and interpret your results.
+You should now have a good enough grasp on how our project works and that has hopefully inspired you with your own hypothesis or another idea that you want to play around on translate with. As mentioned above, you can easily change the text for analysis by changing which Twitter users’ tweets are pulled. By studying our [regression.ipynb](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) and the analysis on our blog you can get a good idea of how to analyze and interpret your results.
 You can also leave Twitter completely and translate your own text files hosted in an S3 bucket. That would be a fun way of testing your AWS and data science skills!
 
 ![Individual experimentation](https://media.istockphoto.com/photos/robot-with-education-hud-picture-id966248982?k=20&m=966248982&s=612x612&w=0&h=gq35V9G0kfjKu0ttr90c8p0VraNtqPDkTvqWQ8oXzCk=)

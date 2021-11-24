@@ -31,6 +31,8 @@ With this bucket, we can now use AWS Translate in a notebook instance
 For this project we used AWS translate asynchronous batch processing service. This allowed us to translate large text files and host them inside an S3 bucket which made analyzing the results much easier.
 
  We have a very detailed [walkthrough](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html) of how to use the AWS Translate asynchronous batch processing service here. If you are relatively familiar with AWS translate, scroll down to the section labeled asynchronous bath processing. If you are new to AWS translate, you will likely find the entire walk through helpful as it demonstrates how to interact with the machine learning based translation service. 	
+ 
+ ![Translate](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/Console2-screenshot.png)
 
 For example, this section demonstrates how to access the translator from within a jupyter notebook. In order to activate the AWS Translate service the boto3 package is required. This example translates two tweets from English to Spanish, as indicated by the Target Language Code. We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed from within a notebook rather than with files stored in an S3 bucket.
 

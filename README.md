@@ -8,22 +8,24 @@ This readme file contains all the information you need in order to navigate this
 
 ## Overview 
 
-Our project has four distinct parts or workflows. Our API workflow relates to using the twitter API to collect data, and then storing that data so that it can be translated. Our AWS Translate workflow relates to actually translating your twitter data and storing it so that you can analyze it. The S3 workflow explains how we stored and accessed our data. Our analysis workflow is where we perform our data analysis and draw our conclusions. 
+The [data folder](https://github.com/lcunild/QTM-350-Final-Project/tree/main/Data) of this repository is where the important notebook files are stored. In particular, the [Twitter API Data](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) and [Regression](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) files are the most crucial for you to understand. Finally, We created a walkthrough to showcase how the method of using AWS translate that we used ([asynchronous batch processing](https://docs.aws.amazon.com/translate/latest/dg/async.html)) works. We will discuss this method in more detail shortly.
+
+Our project has four parts or workflows. Our API workflow relates to using the twitter API to collect data, and then storing that data so that it can be translated. Our AWS Translate workflow relates to actually translating your twitter data and storing it so that you can analyze it. The S3 workflow explains how we stored and accessed our data. Our analysis workflow is where we performed our data analysis and draw our conclusions. 
 
 
 ![Architecture Diagram](https://github.com/lcunild/QTM-350-Final-Project/blob/d158cc946c03de1de535a30bb2c1bbb3a0eb7919/Architecture%20Design%20Diagram.jpg)
 
-This architecture diagram helps visualize how different workflows interact. As you can see, data collection is the first 'real' step, but cannot be completed without having a SageMaker notebook instance to make API calls and an S3 bucket to store the files. You will notice that this kind of interconnectivity is very characteristic of cloud computing and is a running theme of the projecet. 
+This architecture diagram helps visualize how different workflows interact. As you can see, data collection is the first 'real' step, but cannot be completed without having a SageMaker notebook instance to make API calls and an S3 bucket to store the files. You will notice that this kind of interconnectivity is very characteristic of cloud computing and is a running theme of the project. 
 
 ## Twitter API Workflow 
 
-To retrieve our Twitter data, we had to make a developer account so we could access the [Twitter API](https://developer.twitter.com/en/docs/twitter-api). This application was very easy. We explained what we were going to use the API for and were approeved in minutes.
+To retrieve our Twitter data, we had to make a developer account so we could access the [Twitter API](https://developer.twitter.com/en/docs/twitter-api). This application was very easy. We explained what we were going to use the API for and got approeved in minutes.
 
-We selected the twitter accounts we wanted, got their user IDs and retreived their most recent tweets all using the API. We then reformatted the list of tweets into a [text file](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/TwitterData.txt) so it could be translated. All of the code for these steps are available in the [Twitter API Data](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) file wihtin our repo. This code can be used for any users, not just the users that we selected. For example, [Kanye West](https://twitter.com/kanyewest) could be added as a user simply by entering his twitter handle into the for loop used to make the user list. Similar modifications to our code are just as simple simple.
+We selected the twitter accounts we wanted, got their user IDs and retreived their most recent tweets all using the API. We then reformatted the list of tweets into a [text file](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/TwitterData.txt) so it could be translated. All of the code for these steps are available in the Twitter API Data file mentioned above. This code can be used for any users, not just the users that we selected. For example, [Connor Mcgregor](https://twitter.com/TheNotoriousMMA) could be added as a user simply by entering his twitter handle into the for loop used to make the user list. Similar modifications to our code are just as simple.
 
 ## S3 Workflow
 
-In order to use AWS translate it is essential to have the resulting data from API stored in an S3 Bucket as a text file. This allows you to easily call on the translator and the data from the API in a notebook instance. [Here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) is a guide breaking down how to use S3 and create a bucket.
+In order to use AWS translate it is essential to have the resulting data from API stored in an S3 Bucket as a text file. This allows you to easily upload the text file in Translate and call on the translator's output files in a notebook instance. [Here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) is a guide breaking down how to use S3 and create a bucket.
 
 ![Creating a bucket](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/Translate-job.png)
 
@@ -35,18 +37,15 @@ AWS Translate's asynchronous batch processing service allows us to translate lar
 
 We have a very detailed [walkthrough](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/FinalProjectTranslateWalkthrough.html) of how to use the AWS Translate asynchronous batch processing service here. If you are relatively familiar with AWS translate, scroll down to the section labeled asynchronous bath processing. If you are new to AWS translate, you will likely find the entire walk through helpful as it demonstrates how to interact with the machine learning based translation service. 
 
-The begininging of the walkthrough demonstrates how to access the translator from within a jupyter notebook. In the example, a section of Fyodor Dostoevsky's *The Beggar Boy at Christ’s Christmas Tree* (1876) is translated We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed using a command line interface rather than with files stored in an S3 bucket. There are other ways of using translate. If you are interested the documentation is [here](https://docs.aws.amazon.com/translate/latest/dg/how-it-works.html)
+The begininging of the walkthrough demonstrates how to access the translator from within a jupyter notebook. In the example, a section of Fyodor Dostoevsky's *The Beggar Boy at Christ’s Christmas Tree* (1876) is translated. We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed using a command line interface rather than with files stored in an S3 bucket. There are other ways of using translate. If you are interested the documentation is [here](https://docs.aws.amazon.com/translate/latest/dg/how-it-works.html)
 
 This image shows what the asynchronous batch procssing interface in Translate looks like. You can see all the text files of tweets that we used in our project!
  
  ![Translate](https://qtm350twitterproject.s3.amazonaws.com/TranslateWalkthrough/Console2-screenshot.png)
 
 
-
-
-
 ## Analysis Workflow
-In this section we will break down how to interpret and analyze the results. It is necessary that you import both the original tweets and re-translated tweets. To then get the tweets back into a list use the `.splitlines()` function on each txt file iterate through the new list to remove empty lines, so that each element in the list is a tweet.
+In this section we will break down how to interpret and analyze the text files that Translate outputs. It is necessary that you import both the original tweets and re-translated tweets. To then get the tweets back into a list use the `.splitlines()` function on each text file iterate through the new list to remove empty lines, so that each element in the list is a tweet.
  
 To test whether the prevalence of slang impacts the accuracy of the translation we ran a regression of the match percentage of the re-translated and original tweet on the percentage of words which are ‘slang words’ in the original tweet. 
 

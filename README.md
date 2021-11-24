@@ -2,15 +2,15 @@
 
 ![Slang](https://assets.ltkcontent.com/images/105395/Modern-American-Slang_0066f46bde.jpg)
 
-Hi! Welcome to our Github repository. If you haven't checked it out yet, we highly recommend looking at our blog first. It is a more holistic dipiction of what our project is about and showcases our results and analysis. 
+Hi! Welcome to our github repository. If you haven't checked it out yet, we highly recommend looking at our blog first. It is a more holistic depiction of what our project is about and showcases our results and analysis. 
 
-This readme file contains all the information you need in order to navigate this github repository; whether you want to duplicate our project or take aspects of it and do your own thing with it. We tried our best to explain how the Python notebooks and the AWS services work together for those with no experience with either, but some definitely doesn't hurt. We are going to assume that you have access to AWS services through your own AWS account.
+This readme file contains all the information you need in order to navigate this github repository; whether you want to duplicate our project or take aspects of it and do your own thing with it. We tried our best to explain how the python notebooks and the AWS services work together for those with no experience with either, but some definitely doesn't hurt. We are going to assume that you have access to AWS services through your own AWS account.
 
 ## Overview 
 
-The [data folder](https://github.com/lcunild/QTM-350-Final-Project/tree/main/Data) of this repository is where the important notebook files are stored. In particular, the [Twitter API Data](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) and [Regression](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) files are the most crucial for you to understand. Finally, We created a walkthrough to showcase how the method of using AWS translate that we used ([asynchronous batch processing](https://docs.aws.amazon.com/translate/latest/dg/async.html)) works. We will discuss this method in more detail shortly.
+The [data folder](https://github.com/lcunild/QTM-350-Final-Project/tree/main/Data) of this repository is where the important notebook files are stored. In particular, the [Twitter API Data](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) and [Regression](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) files are the most crucial for you to understand. Finally, we created a walkthrough to showcase how the method of using AWS translate that we used ([asynchronous batch processing](https://docs.aws.amazon.com/translate/latest/dg/async.html)) works. We will discuss this method in more detail shortly.
 
-Our project has four parts or workflows. Our API workflow relates to using the twitter API to collect data, and then storing that data so that it can be translated. Our AWS Translate workflow relates to actually translating your twitter data and storing it so that you can analyze it. The S3 workflow explains how we stored and accessed our data. Our analysis workflow is where we performed our data analysis and draw our conclusions. 
+Our project has four parts or workflows. Our API workflow relates to using the Twitter API to collect data and then storing that data so that it can be translated. Our AWS translate workflow relates to actually translating your Twitter data and storing it so that you can analyze it. The S3 workflow explains how we stored and accessed our data. Our analysis workflow is where we performed our data analysis and draw our conclusions. 
 
 
 ![Architecture Diagram](https://github.com/lcunild/QTM-350-Final-Project/blob/d158cc946c03de1de535a30bb2c1bbb3a0eb7919/Architecture%20Design%20Diagram.jpg)

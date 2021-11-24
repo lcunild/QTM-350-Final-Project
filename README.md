@@ -10,12 +10,11 @@ Our project has four distinct parts or workflows. Our API workflow relates to us
 
 ![Architexture Diagram](https://github.com/lcunild/QTM-350-Final-Project/blob/d158cc946c03de1de535a30bb2c1bbb3a0eb7919/Architecture%20Design%20Diagram.jpg)
 
-This architexture diagram helps visual how how different workflows interact. As you can see, data collection is the first 'real' step, but cannot be completed without having a SageMaker notebook instance to make API calls and an S3 bucket to store the files.
+This architexture diagram helps visual how how different workflows interact. As you can see, data collection is the first 'real' step, but cannot be completed without having a SageMaker notebook instance to make API calls and an S3 bucket to store the files. You will notice that this kind of interconnectivity is very characteristic of cloud computing and is a running theme of the projecet. 
 
 ## Twitter API Workflow 
-To retrieve our Twitter data, we used the following code, available in our repo.
+To retrieve our Twitter data, we used the [following code.](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Twitter_API_Data.ipynb) We first made API calls. We selected the twitter accounts we wanted, got their user IDs and retreived their most recent tweets. We then reformatted the list of tweets into a [text file](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/TwitterData.txt) so it could be translated.
 
-We used this .txt file (available in our repo) that we pulled from the API in our translation below.
 
 In order to use an API for translations you have to create a dataframe for users, a list of user id numbers, a list of the specific tweets that are being compiled, and a list of tweet to text files to use in Translate. All of these steps are available in the Twitter API section of our repo. This demonstration can be used for any users, not just the users that we selected. For example, [Kanye West](https://twitter.com/kanyewest) could be added as a user simply by entering his twitter information into the dataframe. This makes modification incredibly simple.
 

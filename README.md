@@ -30,8 +30,6 @@ For this project we used AWS translate asynchronous batch processing service. Th
 
 For example, this section demonstrates how to access the translator from within a jupyter notebook. In order to activate the AWS Translate service the boto3 package is required. This example translates two tweets from English to Spanish, as indicated by the Target Language Code. We did not use this method for our project because we used much larger files of text but it is still important to know that translate can be accessed from within a notebook.
 
-![section](
-
 
 
 ## Analysis Workflow

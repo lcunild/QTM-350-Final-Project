@@ -80,6 +80,8 @@ Note: if you have not used any of the packages in the Python notebooks before, y
 You should now have a good enough grasp on how our project works and that has hopefully inspired you with your own hypothesis or another idea that you want to play around on Translate with. As mentioned above, you can easily change the text for analysis by changing which twitter users’ tweets are pulled. By studying our [regression.ipynb](https://github.com/lcunild/QTM-350-Final-Project/blob/main/Data/Regression.ipynb) and the analysis on our blog you can get a good idea of how to analyze and interpret your results.
 You can also leave Twitter completely and translate your own text files hosted in an S3 bucket. That would be a fun way of testing your AWS and data science skills!
 
+![Individual experimentation](https://media.istockphoto.com/photos/robot-with-education-hud-picture-id966248982?k=20&m=966248982&s=612x612&w=0&h=gq35V9G0kfjKu0ttr90c8p0VraNtqPDkTvqWQ8oXzCk=)
+
 ## Resources
 
 ### AWS Services
